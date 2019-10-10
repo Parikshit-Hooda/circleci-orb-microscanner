@@ -5,13 +5,13 @@
 
 Aqua Security's MicroScanner enables you check your container images for vulnerabilities. If your image has any known high-severity issue, MicroScanner can fail the image build, making it easy to include as a step in your CI/CD pipeline.
 
-The MicroScanner itself is a small, easy to implement container vulnerabilty scanning tool. It has been embedded in the MicroScanner Orb to be called upon during more complex workflows. The MicroScanner has two modes: community and enterprise. This Orb allows for both modes. When used with a communitry mode scanning token as described on the MicroScanner GitHub site token holders may run 100 scans a month  When an Enterprise Aqua Console is specified, the MicroScanner will utilize a more granular, configurable scan policy.
+The MicroScanner itself is a small, easy to implement container vulnerabiilty scanning tool. It has been embedded in the MicroScanner Orb to be called upon during more complex workflows. The MicroScanner has two modes: community and enterprise. This Orb allows for both modes. When used with a communitty mode scanning token as described on the MicroScanner GitHub site token holders may run 100 scans a month  When an Enterprise Aqua Console is specified, the MicroScanner will utilize a more granular, configurable scan policy.
 
 > Note: The freely-available Community Edition is aimed at individual developers and open source projects who may not have control over the full CI/CD pipeline. The <a href="https://www.aquasec.com/use-cases/continuous-image-assurance/">Aqua Security commercial solution</a> is designed to be hooked into your CI/CD pipeline after the image build is complete, and/or to scan images from a public or private container registry.
 
 > Another note: this freely-available Community Edition of MicroScanner scans for vulnerabilities in the image's installed packages. Aqua's commercial customers have access to [additional Enterprise Edition scanning features](#aqua-security-edition-comparison), such as scanning with a customized vulnerability policy, looking at vulnerable files, PII and other sensitive data included in a container image as well as audit logging.
 
-The MicroScanner Orb is an easy way to get started creating free, automated vulnerability assessment reports. These reports are posted to CircleCi's build artifact area.
+The MicroScanner Orb is an easy way to get started creating free, automated vulnerability assessment reports. These reports are posted to CircleCI's build artifact area.
 
 
 ## How to use the Aqua MicroScanner Orb in your config.yml
